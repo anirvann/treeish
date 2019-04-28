@@ -1,6 +1,6 @@
 {
   "name": "treeish",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An array to tree generator with utility functions.",
   "main": "dist/tree.min.js",
   "unpkg": "dist/tree.min.js",
@@ -29,8 +29,7 @@
     "url": "https://github.com/anirvann/treeish/issues"
   },
   "homepage": "https://github.com/anirvann/treeish#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.4.4",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
