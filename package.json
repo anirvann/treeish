@@ -1,0 +1,44 @@
+{
+  "name": "treeish",
+  "version": "1.0.0",
+  "description": "An array to tree generator utility.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.es6.js --fix",
+    "build": "rollup --config",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anirvann/treeish.git"
+  },
+  "keywords": [
+    "array to tree",
+    "tree",
+    "tree traversal",
+    "tree node type search"
+  ],
+  "author": "Anirvann Das",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anirvann/treeish/issues"
+  },
+  "homepage": "https://github.com/anirvann/treeish#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-google": "^0.12.0",
+    "rollup": "^1.10.1",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-eslint": "^5.1.0",
+    "rollup-plugin-filesize": "^6.0.1",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-uglify": "^6.0.2"
+  }
+}
