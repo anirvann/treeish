@@ -1,9 +1,11 @@
 {
   "name": "treeish",
   "version": "1.0.0",
-  "description": "An array to tree generator utility.",
-  "main": "index.js",
+  "description": "An array to tree generator with utility functions.",
+  "main": "dist/tree.min.js",
+  "unpkg": "dist/tree.min.js",
   "scripts": {
+    "prepublishOnly": "npm run lint && npm run build",
     "lint": "eslint index.es6.js --fix",
     "build": "rollup --config",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,6 +14,9 @@
     "type": "git",
     "url": "git+https://github.com/anirvann/treeish.git"
   },
+  "files": [
+    "dist/tree.min.js"
+  ],
   "keywords": [
     "array to tree",
     "tree",

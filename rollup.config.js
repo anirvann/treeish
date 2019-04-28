@@ -30,7 +30,7 @@ let pluginOptions = [
 export default {
   input: 'index.es6.js',
   output: {
-    file: 'dist/bundle.js',
+    file: 'dist/tree.min.js',
     format: 'cjs'
   },
   plugins: pluginOptions,

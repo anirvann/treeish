@@ -1,17 +1,3 @@
-// const arr = [
-//   {id: '3', name: 'C', x: '1', selected: true, type: 'campaign'},
-//   {id: '6', name: 'F', x: '3', selected: true, type: 'adset'},
-//   {id: '1', name: 'A', selected: true, type: 'mediaplan'},
-//   {id: '2', name: 'B', selected: true, type: 'mediaplan'},
-//   {id: '7', name: 'G', x: '4', selected: true, type: 'adset'},
-//   {id: '4', name: 'D', x: '1', selected: true, type: 'campaign'},
-//   {id: '5', name: 'E', x: '2', selected: true, type: 'campaign'},
-//   {id: '8', name: 'G', x: '6', selected: true, type: 'ad'},
-//   {id: '9', name: 'H', x: '6', selected: true, type: 'ad'},
-//   {id: '10', name: 'I', x: '7', selected: true, type: 'ad'},
-//   {id: '11', name: 'J', x: '7', selected: true, type: 'ad'},
-// ];
-
 /** Class representing a tree generatiom utility. */
 class TreeUtil {
   /**
@@ -113,9 +99,8 @@ class TreeUtil {
     } else if (typeof callback !== 'function') {
       errorGenerator('NOT_A_FUNCTION');
     }
-    level = level + 1;
-    children.map((child, idx) => {
-      callback(child, level);
+    children.map((child) => {
+      callback(child);
       if (child.children.length > 0) {
         updateNodes(child.children, callback);
       }
@@ -226,5 +211,3 @@ class TreeUtil {
 }
 
 export default TreeUtil;
-
-// const treeUtil = new TreeUtil(arr, {parentId: 'x'});
