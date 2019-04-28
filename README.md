@@ -1,4 +1,4 @@
-[![npm (version)](https://img.shields.io/npm/v/treeish.svg)](https://img.shields.io/npm/v/treeish.svg) [![npm bundle size (minified)](https://img.shields.io/github/size/anirvann/treeish/dist/bundle.js.svg)](https://img.shields.io/github/size/anirvann/treeish/dist/bundle.js.svg)
+[![npm (version)](https://img.shields.io/npm/v/treeish.svg)](https://img.shields.io/npm/v/treeish.svg)
 
 An array to tree generator utility.
 
