@@ -2,9 +2,10 @@
     "env": {
         "browser": true,
         "es6": true,
-        "node": true
+        "node": true,
+        "jest/globals": true
     },
-    "extends": "google",
+    "extends": "eslint:recommended",
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
@@ -14,8 +15,5 @@
         "ecmaVersion": 2018,
         "sourceType": "module"
     },
-    "rules": {
-        "babel/no-invalid-this": 0,
-        "babel/semi": 0
-    }
+    "plugins": ["jest"]
 }

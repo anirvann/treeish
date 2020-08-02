@@ -6,9 +6,11 @@
   "unpkg": "dist/tree.min.js",
   "scripts": {
     "prepublishOnly": "npm run lint && npm run build",
-    "lint": "eslint index.es6.js --fix",
+    "lint": "eslint index.js --fix",
     "build": "rollup --config",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "coveralls": "jest && cat ./coverage/lcov.info | coveralls",
+    "test:continuous": "jest --watchAll"
   },
   "repository": {
     "type": "git",
@@ -29,20 +31,25 @@
     "url": "https://github.com/anirvann/treeish/issues"
   },
   "homepage": "https://github.com/anirvann/treeish#readme",
-  "dependencies": {},
+  "dependencies": {
+    "eslint-plugin-jest": "^23.20.0"
+  },
   "devDependencies": {
-    "@babel/core": "^7.4.4",
-    "@babel/plugin-proposal-class-properties": "^7.4.4",
-    "@babel/preset-env": "^7.4.4",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.16.0",
-    "eslint-config-google": "^0.12.0",
-    "rollup": "^1.10.1",
-    "rollup-plugin-babel": "^4.3.2",
-    "rollup-plugin-commonjs": "^9.3.4",
-    "rollup-plugin-eslint": "^5.1.0",
-    "rollup-plugin-filesize": "^6.0.1",
-    "rollup-plugin-node-resolve": "^4.2.3",
-    "rollup-plugin-uglify": "^6.0.2"
+    "@babel/core": "^7.11.0",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.2.2",
+    "coveralls": "^3.1.0",
+    "eslint": "^7.5.0",
+    "eslint-config-google": "^0.14.0",
+    "jest": "^26.2.2",
+    "rollup": "^2.23.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-filesize": "^9.0.2",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-uglify": "^6.0.4"
   }
 }
