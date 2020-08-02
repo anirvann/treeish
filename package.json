@@ -1,6 +1,6 @@
 {
   "name": "treeish",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "An array to tree generator with utility functions.",
   "main": "dist/tree.min.js",
   "unpkg": "dist/tree.min.js",
