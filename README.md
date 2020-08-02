@@ -52,7 +52,7 @@ const nestedNodes = treeUtil.getNestedNodesByProperty(
 * ]
 */
 
-const depth = treeUtil.maxDepth; //depth is 4
+const depth = treeUtil.maxDepth(); //depth is 4
 
 treeUtil.updateNodes(
   treeUtil.children[1].children, //pass collection of nodes
