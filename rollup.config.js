@@ -28,7 +28,7 @@ let pluginOptions = [
 ];
 
 export default {
-  input: 'index.es6.js',
+  input: 'index.js',
   output: {
     file: 'dist/tree.min.js',
     format: 'cjs'
