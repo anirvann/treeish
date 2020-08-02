@@ -1,6 +1,6 @@
 [![npm (version)](https://img.shields.io/npm/v/treeish.svg)](https://img.shields.io/npm/v/treeish.svg)
-[![Build Status](https://travis-ci.org/github/anirvann/treeish.svg?branch=master)](https://travis-ci.org/github/anirvann/treeish)
-[![Coverage Status](https://coveralls.io/github/anirvann/treeish/badge.svg?branch=master)](https://coveralls.io/github/anirvann/treeish?branch=master)
+[![Build Status](https://travis-ci.org/anirvann/treeish.svg?branch=master)](https://travis-ci.org/anirvann/treeish)
+[![Coverage Status](https://coveralls.io/repos/github/anirvann/treeish/badge.svg?branch=master)](https://coveralls.io/github/anirvann/treeish?branch=master)
 
 An array to tree generator utility.
 
